@@ -1,0 +1,972 @@
+{
+  "results": [
+    {
+      "id": 715415,
+      "title": "Red Lentil Soup with Chicken and Turnips",
+      "image": "https://spoonacular.com/recipeImages/715415-312x231.png",
+      "summary": "Red lentil soup with chicken and turnips is a nourishing and flavorful dish blending the richness of lentils, the succulence of chicken, and the mild sweetness of turnips. Begin by sautéing onions, garlic, and carrots until soft, then add diced chicken and cook until golden. Incorporate red lentils, turnips, chicken broth, and spices like cumin and paprika, allowing the soup to simmer until the lentils and turnips are tender. Red lentils provide a creamy texture and a wealth of plant-based protein and fiber, while chicken adds depth and extra protein. Turnips contribute a unique flavor profile, enhancing the overall taste of the soup. This versatile dish can be personalized with additional vegetables or garnishes like Greek yogurt and fresh herbs. With its simplicity and nutritional richness, red lentil soup with chicken and turnips offers a satisfying meal option for any occasion.",
+      "ingredients": [
+        {
+          "name": "Bell Pepper",
+          "image": "bell_pepper.png",
+          "metric": {
+            "weight": 100,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cinnamon",
+          "image": "cinnamon.png",
+          "metric": {
+            "weight": 8,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Carrot",
+          "image": "carrot.png",
+          "metric": {
+            "weight": 100,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Garlic",
+          "image": "garlic.png",
+          "metric": {
+            "weight": 20,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Coriander",
+          "image": "coriander.png",
+          "metric": {
+            "weight": 15,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Turmeric",
+          "image": "turmeric.png",
+          "metric": {
+            "weight": 20,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 716406,
+      "title": "Asparagus and Pea Soup: Real Convenience Food",
+      "image": "https://spoonacular.com/recipeImages/716406-312x231.png",
+      "summary": "Asparagus and pea soup is a delightful and convenient dish that offers both taste and ease of preparation. This soup combines the fresh flavors of asparagus and peas, creating a vibrant green concoction bursting with nutrients. Simply sauté onions and garlic, then add chopped asparagus and peas to cook until tender. Blend with vegetable broth until smooth and season with salt, pepper, and a squeeze of lemon juice. Asparagus provides vitamins A, C, and K, while peas offer protein, fiber, and essential minerals. This soup is a fantastic way to incorporate more greens into your diet while enjoying a quick and satisfying meal. With its straightforward recipe and minimal ingredients, asparagus and pea soup is perfect for busy weeknights or lazy days when you crave something comforting yet nutritious.",
+      "ingredients": [
+        {
+          "name": "Broccoli",
+          "image": "broccoli.png",
+          "metric": {
+            "weight": 150,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Tomato",
+          "image": "tomato.png",
+          "metric": {
+            "weight": 120,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Paprika",
+          "image": "paprika.png",
+          "metric": {
+            "weight": 12,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Lettuce",
+          "image": "lettuce.png",
+          "metric": {
+            "weight": 70,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 644387,
+      "title": "Garlicky Kale",
+      "image": "https://spoonacular.com/recipeImages/644387-312x231.png",
+      "summary": "Garlicky kale is a flavorful and nutritious dish that elevates the humble leafy green into a tasty and satisfying side or main course. To make garlicky kale, start by heating olive oil in a skillet and sautéing minced garlic until fragrant. Add chopped kale leaves to the skillet and cook until wilted and tender. Season with salt, pepper, and a squeeze of lemon juice for brightness. The garlic infuses the kale with a rich and savory flavor, while the lemon adds a subtle tanginess. Kale itself is a nutritional powerhouse, packed with vitamins, minerals, and antioxidants. This dish is not only delicious but also incredibly healthy, making it a great addition to any meal. Whether served alongside grilled meats or as a simple vegetarian dish, garlicky kale is sure to please your taste buds and nourish your body.",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "image": "potato.png",
+          "metric": {
+            "weight": 200,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Spinach",
+          "image": "spinach.png",
+          "metric": {
+            "weight": 50,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cumin",
+          "image": "cumin.png",
+          "metric": {
+            "weight": 10,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 782601,
+      "title": "Red Kidney Bean Jambalaya",
+      "image": "https://spoonacular.com/recipeImages/782601-312x231.png",
+      "summary": "Red kidney bean jambalaya is a hearty and flavorful dish that combines the vibrant colors and bold flavors of Creole cuisine. To prepare this dish, start by sautéing onions, bell peppers, and celery in a skillet until softened. Add sliced andouille sausage or other protein of your choice, along with garlic and Cajun seasoning, to infuse the dish with spicy depth. Stir in diced tomatoes, long-grain rice, and vegetable or chicken broth, then simmer until the rice is cooked and the flavors meld together. Finally, add cooked red kidney beans and chopped parsley for a burst of freshness. This jambalaya is a satisfying one-pot meal that is perfect for feeding a crowd or meal prep for busy weekdays. With its bold flavors and hearty ingredients, red kidney bean jambalaya is sure to become a favorite in your recipe repertoire.",
+      "ingredients": [
+        {
+          "name": "Cabbage",
+          "image": "cabbage.png",
+          "metric": {
+            "weight": 180,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Coriander",
+          "image": "coriander.png",
+          "metric": {
+            "weight": 15,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Onion",
+          "image": "onion.png",
+          "metric": {
+            "weight": 80,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cinnamon",
+          "image": "cinnamon.png",
+          "metric": {
+            "weight": 8,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Rosemary",
+          "image": "rosemary.png",
+          "metric": {
+            "weight": 5,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 795751,
+      "title": "Chicken Fajita Stuffed Bell Pepper",
+      "image": "https://spoonacular.com/recipeImages/795751-312x231.png",
+      "summary": "Chicken fajita stuffed bell peppers offer a delightful twist on the classic Tex-Mex dish, combining the bold flavors of fajitas with the vibrant colors and nutrients of bell peppers. To prepare, start by sautéing chicken strips with onions, bell peppers, and fajita seasoning until the chicken is cooked through and the vegetables are tender. Meanwhile, halve bell peppers and remove the seeds, creating a perfect vessel for stuffing. Fill each pepper half with the chicken fajita mixture, then top with shredded cheese and bake until the peppers are tender and the cheese is melted and bubbly. The result is a satisfying and wholesome meal that's packed with protein, fiber, and essential vitamins and minerals. Chicken fajita stuffed bell peppers make a delicious weeknight dinner or a crowd-pleasing party appetizer that's sure to impress.",
+      "ingredients": [
+        {
+          "name": "Zucchini",
+          "image": "zucchini.png",
+          "metric": {
+            "weight": 120,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Lettuce",
+          "image": "lettuce.png",
+          "metric": {
+            "weight": 70,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cinnamon",
+          "image": "cinnamon.png",
+          "metric": {
+            "weight": 8,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 716426,
+      "title": "Cauliflower, Brown Rice, and Vegetable Fried Rice",
+      "image": "https://spoonacular.com/recipeImages/716426-312x231.png",
+      "summary": "Cauliflower, brown rice, and vegetable fried rice is a nutritious and flavorful twist on the classic Asian dish, offering a lighter alternative packed with wholesome ingredients. To prepare this dish, start by pulsing cauliflower florets in a food processor until they resemble rice grains. Cook the cauliflower rice with pre-cooked brown rice in a skillet until tender and slightly crispy. Meanwhile, sauté an assortment of colorful vegetables such as bell peppers, carrots, peas, and green onions until tender-crisp. Add the cooked vegetables to the rice mixture, along with soy sauce, sesame oil, and your choice of seasonings to taste. Toss everything together until well combined and heated through. This cauliflower, brown rice, and vegetable fried rice is not only delicious and satisfying but also rich in fiber, vitamins, and minerals, making it a nutritious and wholesome meal option for any occasion.",
+      "ingredients": [
+        {
+          "name": "Tomato",
+          "image": "tomato.png",
+          "metric": {
+            "weight": 120,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Onion",
+          "image": "onion.png",
+          "metric": {
+            "weight": 80,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cabbage",
+          "image": "cabbage.png",
+          "metric": {
+            "weight": 180,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Lettuce",
+          "image": "lettuce.png",
+          "metric": {
+            "weight": 70,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cinnamon",
+          "image": "cinnamon.png",
+          "metric": {
+            "weight": 8,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 766453,
+      "title": "Hummus and Za'atar",
+      "image": "https://spoonacular.com/recipeImages/766453-312x231.png",
+      "summary": "Hummus and za'atar is a delightful Middle Eastern appetizer or snack that combines the creamy texture of hummus with the aromatic flavor of za'atar spice blend. Hummus, made from chickpeas, tahini, lemon juice, and garlic, provides a rich and creamy base, while za'atar, a blend of herbs like thyme, oregano, sesame seeds, and sumac, adds a savory and tangy kick. To enjoy this tasty pairing, simply spread a generous dollop of hummus on a plate or serving dish and sprinkle with za'atar seasoning. The combination of creamy hummus and flavorful za'atar creates a harmonious balance of textures and tastes that is both satisfying and addictive. Serve with pita bread, fresh vegetables, or crackers for dipping, or use as a spread for sandwiches or wraps. Hummus and za'atar is a versatile and delicious addition to any mezze platter or appetizer spread.",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "image": "potato.png",
+          "metric": {
+            "weight": 200,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Broccoli",
+          "image": "broccoli.png",
+          "metric": {
+            "weight": 150,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Garlic",
+          "image": "garlic.png",
+          "metric": {
+            "weight": 20,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 716627,
+      "title": "Easy Homemade Rice and Beans",
+      "image": "https://spoonacular.com/recipeImages/716627-312x231.png",
+      "summary": "Easy homemade rice and beans is a simple yet comforting dish that brings together two staple ingredients in a delicious and nutritious meal. To prepare, start by cooking rice according to your preferred method, whether it's on the stove, in a rice cooker, or in an Instant Pot. Meanwhile, sauté onions, garlic, and bell peppers in olive oil until softened. Add cooked or canned beans of your choice, such as black beans, pinto beans, or kidney beans, along with spices like cumin, paprika, and chili powder for flavor. Let the mixture simmer until the flavors meld together and the beans are heated through. Serve the rice and beans together in a bowl, garnished with chopped cilantro or green onions for freshness. This easy homemade rice and beans dish is not only budget-friendly and satisfying but also packed with protein, fiber, and essential nutrients, making it a perfect meal for busy weeknights or lazy weekends.",
+      "ingredients": [
+        {
+          "name": "Carrot",
+          "image": "carrot.png",
+          "metric": {
+            "weight": 100,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cumin",
+          "image": "cumin.png",
+          "metric": {
+            "weight": 10,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Coriander",
+          "image": "coriander.png",
+          "metric": {
+            "weight": 15,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 664147,
+      "title": "Tuscan White Bean Soup with Olive Oil and Rosemary",
+      "image": "https://spoonacular.com/recipeImages/664147-312x231.png",
+      "summary": "Tuscan white bean soup with olive oil and rosemary is a rustic and flavorful dish that embodies the essence of Italian cuisine. This hearty soup features creamy white beans simmered in a fragrant broth infused with the rich flavors of olive oil and rosemary. To prepare, start by sautéing onions, garlic, and fresh rosemary in olive oil until aromatic. Add cannellini beans, vegetable broth, and a Parmesan rind for depth of flavor, then let the soup simmer until the beans are tender and the flavors meld together. Finish with a generous drizzle of extra-virgin olive oil and a sprinkle of freshly chopped rosemary for garnish. This Tuscan white bean soup is both comforting and nourishing, making it a perfect meal for chilly evenings or cozy gatherings with loved ones. Serve with crusty bread or a side salad for a complete and satisfying meal.",
+      "ingredients": [
+        {
+          "name": "Zucchini",
+          "image": "zucchini.png",
+          "metric": {
+            "weight": 120,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cucumber",
+          "image": "cucumber.png",
+          "metric": {
+            "weight": 150,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Rosemary",
+          "image": "rosemary.png",
+          "metric": {
+            "weight": 5,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 640941,
+      "title": "Crunchy Brussels Sprouts Side Dish",
+      "image": "https://spoonacular.com/recipeImages/640941-312x231.png",
+      "summary": "A crunchy Brussels sprouts side dish offers a delightful twist on this often misunderstood vegetable, transforming it into a flavorful and satisfying addition to any meal. To create this dish, start by trimming the Brussels sprouts and halving them lengthwise. Toss them in a mixture of olive oil, garlic powder, salt, and pepper, ensuring each sprout is evenly coated. Arrange them in a single layer on a baking sheet and roast in the oven until they are golden brown and crispy on the outside, while still tender on the inside. The result is a delicious medley of textures, with the outer leaves crunchy and caramelized, and the inner layers soft and flavorful. This simple yet elegant side dish pairs beautifully with roasted meats, poultry, or fish, adding both visual appeal and a burst of savory goodness to your plate.",
+      "ingredients": [
+        {
+          "name": "Garlic",
+          "image": "garlic.png",
+          "metric": {
+            "weight": 20,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Onion",
+          "image": "onion.png",
+          "metric": {
+            "weight": 80,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cucumber",
+          "image": "cucumber.png",
+          "metric": {
+            "weight": 150,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 715495,
+      "title": "Turkey Tomato Cheese Pizza",
+      "image": "https://spoonacular.com/recipeImages/715495-312x231.png",
+      "summary": "Turkey tomato cheese pizza offers a delicious twist on the classic Italian favorite, incorporating lean turkey meat for added protein and flavor. To prepare this mouthwatering dish, start by spreading a thin layer of tomato sauce over your pizza crust. Next, sprinkle shredded mozzarella cheese generously over the sauce, followed by slices of fresh tomato and cooked ground turkey. Season with Italian herbs such as oregano, basil, and garlic powder to enhance the flavors. Bake the pizza in a preheated oven until the crust is golden brown and the cheese is bubbly and melted. The result is a tantalizing combination of juicy tomatoes, savory turkey, and gooey cheese atop a crispy crust, creating a satisfying meal that's perfect for sharing with family and friends. Serve slices of this turkey tomato cheese pizza alongside a fresh green salad for a complete and satisfying meal.",
+      "ingredients": [
+        {
+          "name": "Carrot",
+          "image": "carrot.png",
+          "metric": {
+            "weight": 100,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cabbage",
+          "image": "cabbage.png",
+          "metric": {
+            "weight": 180,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Coriander",
+          "image": "coriander.png",
+          "metric": {
+            "weight": 15,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Lettuce",
+          "image": "lettuce.png",
+          "metric": {
+            "weight": 70,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 794349,
+      "title": "Broccoli and Chickpea Rice Salad",
+      "image": "https://spoonacular.com/recipeImages/794349-312x231.png",
+      "summary": "Broccoli and chickpea rice salad is a nutritious and flavorful dish that combines the freshness of broccoli, the heartiness of chickpeas, and the wholesome goodness of rice. To prepare this vibrant salad, start by cooking rice according to package instructions and letting it cool to room temperature. In a large mixing bowl, combine the cooked rice with steamed broccoli florets, drained and rinsed chickpeas, and your choice of additional vegetables such as diced bell peppers, shredded carrots, or sliced red onions. For added flavor and texture, toss the salad with a zesty dressing made from olive oil, lemon juice, garlic, and a touch of honey or maple syrup. Season with salt, pepper, and your favorite herbs and spices to taste. This broccoli and chickpea rice salad is not only delicious and satisfying but also packed with protein, fiber, vitamins, and minerals, making it a perfect option for a healthy lunch or dinner. Serve it as a main course or as a side dish alongside grilled chicken, fish, or tofu for a complete and balanced meal.",
+      "ingredients": [
+        {
+          "name": "Paprika",
+          "image": "paprika.png",
+          "metric": {
+            "weight": 12,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cinnamon",
+          "image": "cinnamon.png",
+          "metric": {
+            "weight": 8,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Rosemary",
+          "image": "rosemary.png",
+          "metric": {
+            "weight": 5,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Thyme",
+          "image": "thyme.png",
+          "metric": {
+            "weight": 6,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 716381,
+      "title": "Nigerian Snail Stew",
+      "image": "https://spoonacular.com/recipeImages/716381-312x231.png",
+      "summary": "Nigerian snail stew is a tantalizing dish that highlights the culinary diversity of Nigeria. To prepare, clean and marinate fresh snails with lime juice, garlic, ginger, and Nigerian spices like curry powder and thyme. After marinating, sauté onions, bell peppers, and tomatoes in palm oil until softened. Add the marinated snails and simmer until tender. This flavorful stew is often served hot with rice, pounded yam, or fufu, providing a delightful contrast of textures and flavors. The tender snails, infused with the aromatic spices and rich palm oil, create a dish that is both exotic and comforting. Nigerian snail stew is perfect for adventurous eaters seeking to explore the vibrant tastes of West African cuisine or for special occasions where a unique and memorable dish is desired.",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "image": "potato.png",
+          "metric": {
+            "weight": 200,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Broccoli",
+          "image": "broccoli.png",
+          "metric": {
+            "weight": 150,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Spinach",
+          "image": "spinach.png",
+          "metric": {
+            "weight": 50,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 660306,
+      "title": "Slow Cooker: Pork and Garbanzo Beans",
+      "image": "https://spoonacular.com/recipeImages/660306-312x231.png",
+      "summary": "Slow cooker pork and garbanzo beans is a delicious and easy-to-make dish that offers both convenience and flavor. To prepare, start by seasoning pork shoulder or loin with salt, pepper, and your favorite spices such as paprika, cumin, and garlic powder. Place the seasoned pork in the slow cooker along with drained and rinsed garbanzo beans (chickpeas), diced onions, minced garlic, and chicken or vegetable broth. Cook on low heat for 6-8 hours or until the pork is tender and falls apart easily.The slow cooking process allows the flavors to meld together, resulting in a rich and savory dish with tender, melt-in-your-mouth pork and creamy garbanzo beans. Serve the slow cooker pork and garbanzo beans over cooked rice or with crusty bread for a satisfying and comforting meal. This dish is perfect for busy days when you want a hearty and nutritious meal waiting for you at the end of the day.",
+      "ingredients": [
+        {
+          "name": "Tomato",
+          "image": "tomato.png",
+          "metric": {
+            "weight": 120,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Broccoli",
+          "image": "broccoli.png",
+          "metric": {
+            "weight": 150,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Garlic",
+          "image": "garlic.png",
+          "metric": {
+            "weight": 20,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Onion",
+          "image": "onion.png",
+          "metric": {
+            "weight": 80,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cabbage",
+          "image": "cabbage.png",
+          "metric": {
+            "weight": 180,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 756814,
+      "title": "Powerhouse Almond Matcha Superfood Smoothie",
+      "image": "https://spoonacular.com/recipeImages/756814-312x231.png",
+      "summary": "The powerhouse almond matcha superfood smoothie is a nutritious and energizing blend that packs a punch of flavor and health benefits. To create this vibrant smoothie, start by combining almond milk, frozen banana, spinach, almond butter, and a scoop of matcha powder in a blender. Matcha, a finely ground powder of specially grown and processed green tea leaves, is known for its high concentration of antioxidants and nutrients, making it a potent superfood ingredient. Add a touch of honey or maple syrup for sweetness, and blend until smooth and creamy. This nutrient-dense smoothie is not only delicious but also provides a burst of energy and vitality to kickstart your day. The combination of almond milk, spinach, and matcha offers a powerhouse of vitamins, minerals, and antioxidants to support overall health and well-being. Enjoy the powerhouse almond matcha superfood smoothie as a nutritious breakfast option or a refreshing pick-me-up any time of day.",
+      "ingredients": [
+        {
+          "name": "Cabbage",
+          "image": "cabbage.png",
+          "metric": {
+            "weight": 180,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Rosemary",
+          "image": "rosemary.png",
+          "metric": {
+            "weight": 5,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Tomato",
+          "image": "tomato.png",
+          "metric": {
+            "weight": 120,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Paprika",
+          "image": "paprika.png",
+          "metric": {
+            "weight": 12,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Broccoli",
+          "image": "broccoli.png",
+          "metric": {
+            "weight": 150,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 715769,
+      "title": "Broccolini Quinoa Pilaf",
+      "image": "https://spoonacular.com/recipeImages/715769-312x231.png",
+      "summary": "Broccolini quinoa pilaf is a vibrant and wholesome dish that combines the earthy flavors of quinoa with the tender crispness of broccolini. To prepare, start by rinsing quinoa under cold water to remove any bitterness. Then, cook the quinoa in vegetable or chicken broth until fluffy and tender. Meanwhile, sauté broccolini with garlic and olive oil until bright green and slightly caramelized. Combine the cooked quinoa and broccolini in a large mixing bowl, and toss with lemon zest, toasted pine nuts, and a sprinkle of Parmesan cheese for added flavor. Season with salt and pepper to taste, and garnish with fresh herbs like parsley or basil for a pop of color. This broccolini quinoa pilaf is not only delicious and satisfying but also packed with protein, fiber, and essential nutrients, making it a perfect side dish or vegetarian main course for any occasion.",
+      "ingredients": [
+        {
+          "name": "Spinach",
+          "image": "spinach.png",
+          "metric": {
+            "weight": 50,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Bell Pepper",
+          "image": "bell_pepper.png",
+          "metric": {
+            "weight": 100,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Potato",
+          "image": "potato.png",
+          "metric": {
+            "weight": 200,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cinnamon",
+          "image": "cinnamon.png",
+          "metric": {
+            "weight": 8,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Carrot",
+          "image": "carrot.png",
+          "metric": {
+            "weight": 100,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cabbage",
+          "image": "cabbage.png",
+          "metric": {
+            "weight": 180,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 642129,
+      "title": "Easy To Make Spring Rolls",
+      "image": "https://spoonacular.com/recipeImages/642129-312x231.png",
+      "summary": "Easy-to-make spring rolls are a delightful and versatile dish that can be customized with a variety of fillings to suit your taste preferences. To prepare, start by soaking rice paper wrappers in warm water until they become pliable. Then, lay the softened wrapper on a flat surface and fill it with a combination of fresh vegetables such as shredded carrots, cucumber, bell peppers, lettuce, and herbs like mint or cilantro. Add protein options like cooked shrimp, tofu, or shredded chicken if desired. Next, fold the sides of the wrapper over the filling and roll tightly, similar to a burrito, sealing the edges with a bit of water if necessary. Serve the spring rolls with your favorite dipping sauce, such as sweet chili sauce, peanut sauce, or soy sauce with lime and chili. These easy-to-make spring rolls are perfect for a light and refreshing appetizer, snack, or light meal, and are sure to impress with their vibrant colors and fresh flavors.",
+      "ingredients": [
+        {
+          "name": "Coriander",
+          "image": "coriander.png",
+          "metric": {
+            "weight": 15,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Lettuce",
+          "image": "lettuce.png",
+          "metric": {
+            "weight": 70,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Paprika",
+          "image": "paprika.png",
+          "metric": {
+            "weight": 12,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Rosemary",
+          "image": "rosemary.png",
+          "metric": {
+            "weight": 5,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Thyme",
+          "image": "thyme.png",
+          "metric": {
+            "weight": 6,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cumin",
+          "image": "cumin.png",
+          "metric": {
+            "weight": 10,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 642605,
+      "title": "Farro With Mushrooms and Asparagus",
+      "image": "https://spoonacular.com/recipeImages/642605-312x231.png",
+      "summary": "Farro with mushrooms and asparagus is a hearty and flavorful dish that celebrates the earthy goodness of these wholesome ingredients. To prepare, start by cooking farro according to package instructions until tender yet slightly chewy. Meanwhile, sauté sliced mushrooms in olive oil until golden brown and caramelized, then add chopped asparagus spears and cook until tender-crisp. Combine the cooked farro with the mushrooms and asparagus in a large mixing bowl, and toss with a squeeze of lemon juice, minced garlic, and a sprinkle of grated Parmesan cheese for added depth of flavor. Season with salt and pepper to taste, and garnish with chopped fresh herbs like parsley or thyme for a burst of freshness. This farro with mushrooms and asparagus is not only delicious and satisfying but also packed with fiber, vitamins, and minerals, making it a perfect side dish or vegetarian main course for any occasion.",
+      "ingredients": [
+        {
+          "name": "Carrot",
+          "image": "carrot.png",
+          "metric": {
+            "weight": 100,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Broccoli",
+          "image": "broccoli.png",
+          "metric": {
+            "weight": 150,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cumin",
+          "image": "cumin.png",
+          "metric": {
+            "weight": 10,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Coriander",
+          "image": "coriander.png",
+          "metric": {
+            "weight": 15,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Paprika",
+          "image": "paprika.png",
+          "metric": {
+            "weight": 12,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Cabbage",
+          "image": "cabbage.png",
+          "metric": {
+            "weight": 180,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Onion",
+          "image": "onion.png",
+          "metric": {
+            "weight": 80,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 636589,
+      "title": "Butternut Squash Frittata",
+      "image": "https://spoonacular.com/recipeImages/636589-312x231.png",
+      "summary": "A butternut squash frittata is a delightful and nutritious dish that showcases the sweet and nutty flavor of this seasonal vegetable. To prepare, start by roasting cubed butternut squash in the oven until tender and caramelized. Meanwhile, whisk together eggs, milk, and your favorite seasonings such as salt, pepper, and nutmeg in a mixing bowl. Once the squash is roasted, add it to the egg mixture along with sautéed onions and spinach for added flavor and texture. Pour the mixture into a greased oven-safe skillet and cook over medium heat until the edges begin to set. Transfer the skillet to the oven and bake until the frittata is golden brown and cooked through. Serve the butternut squash frittata warm or at room temperature, garnished with fresh herbs like parsley or chives for a burst of freshness. This versatile dish is perfect for breakfast, brunch, or even a light dinner, and is sure to impress with its rich and satisfying flavor.",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "image": "potato.png",
+          "metric": {
+            "weight": 200,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Spinach",
+          "image": "spinach.png",
+          "metric": {
+            "weight": 50,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Rosemary",
+          "image": "rosemary.png",
+          "metric": {
+            "weight": 5,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Thyme",
+          "image": "thyme.png",
+          "metric": {
+            "weight": 6,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Lettuce",
+          "image": "lettuce.png",
+          "metric": {
+            "weight": 70,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Tomato",
+          "image": "tomato.png",
+          "metric": {
+            "weight": 120,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Bell Pepper",
+          "image": "bell_pepper.png",
+          "metric": {
+            "weight": 100,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Garlic",
+          "image": "garlic.png",
+          "metric": {
+            "weight": 20,
+            "unit": "gram"
+          }
+        }
+      ]
+    },
+    {
+      "id": 646738,
+      "title": "Herbivoracious' White Bean and Kale Soup",
+      "image": "https://spoonacular.com/recipeImages/646738-312x231.png",
+      "summary": "Herbivoracious' white bean and kale soup is a wholesome and flavorful dish that celebrates the simplicity and versatility of plant-based ingredients. To prepare, start by sautéing diced onions and garlic in olive oil until soft and fragrant. Add diced carrots and celery, along with fresh herbs like thyme and rosemary, and cook until the vegetables are tender. Next, add canned white beans (such as cannellini or navy beans) and vegetable broth to the pot, and simmer until the flavors meld together. Just before serving, stir in chopped kale leaves and allow them to wilt slightly in the hot soup. Season with salt, pepper, and a squeeze of lemon juice for brightness. This white bean and kale soup is both nutritious and delicious, packed with protein, fiber, vitamins, and minerals. Serve it with crusty bread or a side salad for a satisfying and comforting meal that's perfect for any day of the week.",
+      "ingredients": [
+        {
+          "name": "Cinnamon",
+          "image": "cinnamon.png",
+          "metric": {
+            "weight": 8,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Thyme",
+          "image": "thyme.png",
+          "metric": {
+            "weight": 6,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Bell Pepper",
+          "image": "bell_pepper.png",
+          "metric": {
+            "weight": 100,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Potato",
+          "image": "potato.png",
+          "metric": {
+            "weight": 200,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Spinach",
+          "image": "spinach.png",
+          "metric": {
+            "weight": 50,
+            "unit": "gram"
+          }
+        },
+        {
+          "name": "Ginger",
+          "image": "ginger.png",
+          "metric": {
+            "weight": 30,
+            "unit": "gram"
+          }
+        }
+      ]
+    }
+  ]
+}
