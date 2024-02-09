@@ -1,10 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import logo from "/logo.png";
 import Overlay from "./Overlay";
+import { useNavigate } from "react-router-dom";
 
 const Nav = ({ type, putSearchTerm }) => {
   const [isFocused, setIsFocused] = useState(false);
   const [value, setValue] = useState("");
+
+  const navigate = useNavigate();
 
   const inputRef = useRef();
 
@@ -15,6 +18,7 @@ const Nav = ({ type, putSearchTerm }) => {
   const handleBlur = function () {
     setIsFocused(false);
   };
+  console.log(type);
 
   function handleKeyDown(e) {
     if (e.key === "Enter") {
@@ -73,16 +77,23 @@ const Nav = ({ type, putSearchTerm }) => {
           </div>
         </div>
 
-        {/* <div className="column2 flex">
+        <div className="column2 flex">
           <div className="profile">
-            <img
-              src={profile}
-              className="profile-img"
-              alt="profile image"
-              width="70"
-            />
+            <p
+              onClick={() => {
+                localStorage.removeItem("apiKey");
+                if (type === "Homepage") {
+                  location.reload(); //temporarily
+                } else {
+                  console.log("here");
+                  navigate("/");
+                }
+              }}
+            >
+              Log out
+            </p>
           </div>
-        </div> */}
+        </div>
       </div>
       {/* <Overlay /> */}
       {isFocused && <Overlay />}

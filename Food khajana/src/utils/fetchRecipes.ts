@@ -11,6 +11,8 @@ export const fetchRecipes = async function ({
   rangeQueryData,
   pageParam,
 }) {
+  const apiKey = localStorage.getItem("apiKey");
+
   const dietFilterData = processDietFilters(queryData);
   const rangeFilterData = processRangeFilters(rangeQueryData);
   const readyInFilterData = processReadyInFilters(queryData);
@@ -18,12 +20,14 @@ export const fetchRecipes = async function ({
   const dietFilterDataFinal = dietFilterData ? "&diet=" + dietFilterData : "";
   const rangeFilterDataFinal = rangeFilterData ? "&" + rangeFilterData : "";
   const readyInFilterDataFinal = readyInFilterData
-    ? "&ready_in=" + readyInFilterData
+    ? "&maxReadyTime=" + readyInFilterData
     : "";
-  const searchTermFinal = searchTerm ? "&searchTerm=" + searchTerm : "";
-  const pageNum = pageParam ? "&page=" + pageParam : "";
+  const searchTermFinal = searchTerm ? "&query=" + searchTerm : "";
+  const page = pageParam ? `&number=10&offset=${(pageParam - 1) * 10}` : "";
 
-  const url = `http://localhost:5000/api/fetchRecipes?apiKey=abc${dietFilterDataFinal}${rangeFilterDataFinal}${readyInFilterDataFinal}${searchTermFinal}${pageNum}`;
+  const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}${dietFilterDataFinal}${rangeFilterDataFinal}${readyInFilterDataFinal}${searchTermFinal}${page}`;
+
+  console.log(url);
 
   const res = await fetch(url, signal);
 
@@ -35,5 +39,6 @@ export const fetchRecipes = async function ({
   }
 
   const resData = await res.json();
+
   return resData;
 };

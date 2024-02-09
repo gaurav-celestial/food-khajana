@@ -1,16 +1,20 @@
 const Ingredient = ({ data, values }) => {
-  console.log(values);
+  console.log(values, data);
 
   const weight =
-    values === "us" ? data.metric.weight / 250 : data.metric.weight;
-  const unit = values === "us" ? "cups" : "grams";
+    values === "us" ? data.amount.us.value : data.amount.metric.value;
+  const unit = values === "us" ? data.amount.us.unit : data.amount.metric.unit;
 
   return (
     <div className="ingredient">
       <p>
         {weight} {unit}
       </p>
-      <img src={`/ingredients/${data.image}`} width="60" alt="ing1" />
+      <img
+        src={`https://spoonacular.com/recipeImages/${data.image}`}
+        width="60"
+        alt="ing1"
+      />
       <p>{data.name}</p>
     </div>
   );

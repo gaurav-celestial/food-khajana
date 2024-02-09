@@ -1,17 +1,23 @@
 export const fetchRecipeSummary = async function ({ signal, id }) {
-  const url = `http://localhost:5000/api/fetchRecipes/${id}`;
+  let data;
 
-  console.log(url);
+  const apiKey = localStorage.getItem("apiKey");
 
-  const res = await fetch(url, signal);
+  await Promise.all([
+    fetch(`https://api.spoonacular.com/recipes/${id}/summary?apiKey=${apiKey}`),
+    fetch(
+      `https://api.spoonacular.com/recipes/${id}/ingredientWidget.json?apiKey=${apiKey}`
+    ),
+  ])
+    .then((responses) =>
+      Promise.all(responses.map((response) => response.json()))
+    )
+    .then((d) => {
+      data = d;
+    })
+    .catch((err) => {
+      console.log("error fetching data", err);
+    });
 
-  if (!res.ok) {
-    const error = new Error("An error occured while fetching the data");
-    error.code = res.status;
-    error.info = await res.json();
-    throw error;
-  }
-
-  const resData = await res.json();
-  return resData[0];
+  return data;
 };

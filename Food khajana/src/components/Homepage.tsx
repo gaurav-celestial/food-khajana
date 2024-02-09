@@ -2,8 +2,8 @@ import "./Homepage.css";
 import pizzaImg from "/pizza.jpg";
 
 import RecipeItemCard from "./RecipeItemCard";
-import { useQuery, useInfiniteQuery } from "@tanstack/react-query";
-import { fetchRecipes } from "../utils/fetchRecipes";
+import { useInfiniteQuery } from "@tanstack/react-query";
+import { fetchRecipes } from "../utils/fetchRecipes.ts";
 import { useNavigate } from "react-router-dom";
 import Nav from "../small components/Nav";
 
@@ -14,6 +14,7 @@ import { useInView } from "react-intersection-observer";
 
 const Homepage = () => {
   const navigate = useNavigate();
+
   const { ref, inView } = useInView();
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,8 +39,8 @@ const Homepage = () => {
       "<_10_minutes": false,
       "<_20_minutes": false,
       "<_30_minutes": false,
-      "<_1_hour": false,
-      "<_1.5_hours": false,
+      "<_60_minutes": false,
+      "<_90_minutes": false,
     },
   });
 
@@ -67,6 +68,8 @@ const Homepage = () => {
       return nextPage;
     },
   });
+
+  console.log(error);
 
   const handleRecipeClick = function (id) {
     navigate(`/${id}`);
@@ -204,7 +207,7 @@ const Homepage = () => {
                 name="1hour"
                 value="1 hour"
                 onChange={() => {
-                  handleFilterChange("ready_in", "<_1_hour");
+                  handleFilterChange("ready_in", "<_60_minutes");
                 }}
               />
               <label htmlFor="1hour"> &lt; 1 hour</label>
@@ -216,7 +219,7 @@ const Homepage = () => {
                 name="1.5hours"
                 value="1.5 hours"
                 onChange={() => {
-                  handleFilterChange("ready_in", "<_1.5_hours");
+                  handleFilterChange("ready_in", "<_90_minutes");
                 }}
               />
               <label htmlFor="1.5hours"> &lt; 1.5 hours</label>
@@ -262,7 +265,7 @@ const Homepage = () => {
         {data && (
           <div className="recipes">
             {data?.pages.map((page) =>
-              page.map((recipeItem) => {
+              page.results.map((recipeItem) => {
                 return (
                   <RecipeItemCard
                     key={recipeItem.id}
@@ -285,7 +288,9 @@ const Homepage = () => {
             <CircularProgress />{" "}
           </Box>
         )}
-        {status === "error" && <p>Error Occured</p>}
+        {status === "error" && (
+          <p>Your daily limit has been exhausted. Payment required</p>
+        )}
       </div>
     </>
   );

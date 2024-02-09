@@ -93,10 +93,12 @@
 
 .listing-data-grid {
   display: flex;
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 40px;
   margin: 20px 0 20px 0;
+  flex-wrap: wrap;
   /* flex-direction: column; */
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .listing-data-list {
@@ -105,9 +107,9 @@
 }
 
 .listing-data-grid div {
-  width: 80px;
+  width: 150px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -132,4 +134,19 @@
 
 .recipe-title {
   margin: 20px 0 20px 0;
+}
+
+.listing-data-grid .ingredient {
+  width: 200px;
+}
+
+.ingredient p {
+  /* width: 100px; */
+  /* height: 200px; */
+}
+
+.loading-container-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }

@@ -243,8 +243,6 @@ input:focus {
   outline: none;
 }
 
-.profile-img {
-  border-radius: 50%;
-  background-color: red;
-  object-fit: contain;
+.profile p {
+  cursor: pointer;
 }

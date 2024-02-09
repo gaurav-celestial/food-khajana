@@ -32,12 +32,10 @@ const processReadyInFilters = function (queryData) {
   });
 
   const finalReadyIn = readyInFilter.map((data) => {
-    return data[0];
+    return Number(data[0].split("_")[1]);
   });
 
-  finalReadyIn.join("&");
-
-  return finalReadyIn.join(",");
+  return Math.max(...finalReadyIn, 0);
 };
 
 const processRangeFilters = function (rangeQueryData) {
