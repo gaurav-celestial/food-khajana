@@ -10,20 +10,22 @@ import { Box, CircularProgress } from "@mui/material";
 
 const RecipeDetail = () => {
   const { id } = useParams();
+  type KeyValueObj = {
+    [index: string]: string;
+  };
 
-  const { data, isPending, isError, error } = useQuery({
+  const { data, isPending, isError } = useQuery({
     queryKey: [id],
-    queryFn: ({ signal }) => fetchRecipeSummary({ signal, id }),
+    queryFn: () => fetchRecipeSummary({ id }),
   });
-
-  console.log(data);
 
   const [currentIngsView, setCurrentIngsView] = useState("grid");
   const [currentIngsValues, setCurrentIngsValues] = useState("metric");
 
   useEffect(() => {
     setTimeout(() => {
-      if (data) document.querySelector(".desc1").innerHTML = data?.[0]?.summary;
+      if (data)
+        document!.querySelector(".desc1")!.innerHTML = data?.[0]?.summary;
     }, 200);
     //because returned data is in html format
   }, [data]);

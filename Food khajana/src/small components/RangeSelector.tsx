@@ -3,10 +3,26 @@ import { useRef, useState } from "react";
 
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 
-const RangeSelector = ({ type, handleRangeFilterChange, min, max }) => {
+type RangeSelectorProps = {
+  type: string;
+  handleRangeFilterChange: (type: string, newValue: number[]) => void;
+  min: number;
+  max: number;
+};
+
+const RangeSelector = ({
+  type,
+  handleRangeFilterChange,
+  min,
+  max,
+}: RangeSelectorProps) => {
   const [value, setValue] = useState([min, max]);
 
-  const handleChange = (event, newValue, activeThumb) => {
+  const handleChange = (
+    event: InputEvent,
+    newValue: number[],
+    activeThumb: number
+  ) => {
     setValue(newValue);
 
     //MATERIAL UI CODE
@@ -19,7 +35,7 @@ const RangeSelector = ({ type, handleRangeFilterChange, min, max }) => {
     }
   };
 
-  function valuetext(value) {
+  function valuetext(value: number): string {
     return `${value}`;
   }
 
@@ -27,8 +43,8 @@ const RangeSelector = ({ type, handleRangeFilterChange, min, max }) => {
     handleRangeFilterChange(type, value);
   };
 
-  const minRef = useRef();
-  const maxRef = useRef();
+  const minRef = useRef<HTMLInputElement>();
+  const maxRef = useRef<HTMLInputElement>();
 
   return (
     <>
@@ -53,7 +69,7 @@ const RangeSelector = ({ type, handleRangeFilterChange, min, max }) => {
             ref={minRef}
             onChange={() => {
               setValue((prev) => {
-                return [Number(minRef.current.value), prev[1]];
+                return [Number(minRef!.current!.value), prev[1]];
               });
             }}
             max={max}
@@ -68,7 +84,7 @@ const RangeSelector = ({ type, handleRangeFilterChange, min, max }) => {
             ref={maxRef}
             onChange={() => {
               setValue((prev) => {
-                return [prev[0], Number(maxRef.current.value)];
+                return [prev[0], Number(maxRef!.current!.value)];
               });
             }}
             max={max}

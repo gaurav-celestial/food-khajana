@@ -1,6 +1,11 @@
-export const fetchRecipeSummary = async function ({ signal, id }) {
-  let data;
+type FetchRecipeSummaryProps = {
+  id: string | undefined;
+};
 
+export const fetchRecipeSummary = async function ({
+  id,
+}: FetchRecipeSummaryProps) {
+  let data;
   const apiKey = localStorage.getItem("apiKey");
 
   await Promise.all([

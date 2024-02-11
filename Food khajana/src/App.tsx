@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
 const queryClient = new QueryClient();
 
 function App() {
-  const [apiKey, setApiKey] = useState("");
+  const [apiKey, setApiKey] = useState<string | null>("");
 
-  const handleApiKey = function (val) {
+  const handleApiKey = function (val: string) {
     setApiKey(val);
   };
 

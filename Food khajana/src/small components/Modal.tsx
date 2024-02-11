@@ -1,10 +1,15 @@
 import { CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 
-const Modal = ({ showModal, handleApiKey }) => {
-  const [apiKey, setApiKey] = useState();
+type ModalProps = {
+  showModal: boolean;
+  handleApiKey: (apiKey: string) => void;
+};
+
+const Modal = ({ showModal, handleApiKey }: ModalProps) => {
+  const [apiKey, setApiKey] = useState("");
   const [isPending, setIsPending] = useState(false);
-  const [apiResponse, setApiResponse] = useState();
+  const [apiResponse, setApiResponse] = useState<string | object>("");
 
   const handleSubmit = function () {
     async function fetchApiTest() {

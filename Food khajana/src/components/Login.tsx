@@ -4,7 +4,11 @@ import { useState } from "react";
 
 import Modal from "../small components/Modal";
 
-const Login = ({ handleApiKey }) => {
+type functionVal = {
+  handleApiKey: (val: string) => void;
+};
+
+const Login = ({ handleApiKey }: functionVal) => {
   const [showModal, setShowModal] = useState(false);
 
   console.log(showModal);

@@ -12,14 +12,39 @@ import { useEffect, useState } from "react";
 import { Box, CircularProgress } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 
+type queryDataObj = {
+  diet: {
+    gluten_free: boolean;
+    vegetarian: boolean;
+  };
+  ready_in: {
+    "<_10_minutes": boolean;
+    "<_20_minutes": boolean;
+    "<_30_minutes": boolean;
+    "<_60_minutes": boolean;
+    "<_90_minutes": boolean;
+  };
+};
+
+type rangeQueryDataObj = {
+  minCalories: string | number;
+  maxCalories: string | number;
+  minProtein: string | number;
+  maxProtein: string | number;
+  minFat: string | number;
+  maxFat: string | number;
+  minCarbs: string | number;
+  maxCarbs: string | number;
+};
+
 const Homepage = () => {
   const navigate = useNavigate();
 
   const { ref, inView } = useInView();
 
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
-  const [rangeQueryData, setRangeQueryData] = useState({
+  const [rangeQueryData, setRangeQueryData] = useState<rangeQueryDataObj>({
     minCalories: "",
     maxCalories: "",
     minProtein: "",
@@ -30,7 +55,9 @@ const Homepage = () => {
     maxCarbs: "",
   });
 
-  const [queryData, setQueryData] = useState({
+  console.log(rangeQueryData);
+
+  const [queryData, setQueryData] = useState<queryDataObj>({
     diet: {
       gluten_free: false,
       vegetarian: false,
@@ -44,16 +71,9 @@ const Homepage = () => {
     },
   });
 
-  const {
-    data,
-    status,
-    error,
-    fetchNextPage,
-    isFetchingNextPage,
-    hasNextPage,
-  } = useInfiniteQuery({
+  const { data, status, fetchNextPage, hasNextPage } = useInfiniteQuery({
     queryKey: [searchTerm, queryData, rangeQueryData],
-    queryFn: ({ signal, pageParam }) =>
+    queryFn: ({ signal, pageParam }): ReturnType<typeof fetchRecipes> =>
       fetchRecipes({
         signal,
         searchTerm,
@@ -62,20 +82,17 @@ const Homepage = () => {
         pageParam,
       }),
     initialPageParam: 1,
-    getNextPageParam: (lastPage, allPages) => {
+    getNextPageParam: (lastPage, allPages): number | undefined => {
       const nextPage = lastPage?.length < 9 ? undefined : allPages.length + 1;
-
       return nextPage;
     },
   });
 
-  console.log(error);
-
-  const handleRecipeClick = function (id) {
+  const handleRecipeClick = function (id: string) {
     navigate(`/${id}`);
   };
 
-  const handleRangeFilterChange = function (type, newValue) {
+  const handleRangeFilterChange = function (type: string, newValue: number[]) {
     if (type === "Calories") {
       setRangeQueryData((prev) => {
         return { ...prev, minCalories: newValue[0], maxCalories: newValue[1] };
@@ -98,7 +115,12 @@ const Homepage = () => {
     }
   };
 
-  const handleFilterChange = function (type, newValue) {
+  console.log(queryData);
+  const handleFilterChange = function (
+    type: string,
+    newValue: keyof queryDataObj["diet" | "ready_in"]
+  ) {
+    console.log(newValue);
     if (type === "diet")
       setQueryData((prev) => {
         return {
@@ -116,7 +138,7 @@ const Homepage = () => {
       });
   };
 
-  const putSearchTerm = function (val) {
+  const putSearchTerm = function (val: string) {
     setSearchTerm(val);
   };
 
@@ -143,7 +165,10 @@ const Homepage = () => {
                 name="gluten-free"
                 value="gluten-free"
                 onChange={() => {
-                  handleFilterChange("diet", "gluten_free");
+                  handleFilterChange(
+                    "diet",
+                    "gluten_free" as keyof queryDataObj["diet" | "ready_in"]
+                  );
                 }}
               />
               <label htmlFor="gluten-free"> gluten free</label>
@@ -155,7 +180,10 @@ const Homepage = () => {
                 name="vegetarian"
                 value="vegetarian"
                 onChange={() => {
-                  handleFilterChange("diet", "vegetarian");
+                  handleFilterChange(
+                    "diet",
+                    "vegetarian" as keyof queryDataObj["diet" | "ready_in"]
+                  );
                 }}
               />
               <label htmlFor="vegetarian"> vegetarian</label>
@@ -171,7 +199,10 @@ const Homepage = () => {
                 name="10mins"
                 value="10 mins"
                 onChange={() => {
-                  handleFilterChange("ready_in", "<_10_minutes");
+                  handleFilterChange(
+                    "ready_in",
+                    "<_10_minutes" as keyof queryDataObj["diet" | "ready_in"]
+                  );
                 }}
               />
               <label htmlFor="10mins"> &lt; 10 minutes</label>
@@ -183,7 +214,10 @@ const Homepage = () => {
                 name="20mins"
                 value="20 min"
                 onChange={() => {
-                  handleFilterChange("ready_in", "<_20_minutes");
+                  handleFilterChange(
+                    "ready_in",
+                    "<_20_minutes" as keyof queryDataObj["diet" | "ready_in"]
+                  );
                 }}
               />
               <label htmlFor="20mins"> &lt; 20 minutes</label>
@@ -195,7 +229,10 @@ const Homepage = () => {
                 name="30mins"
                 value="30 min"
                 onChange={() => {
-                  handleFilterChange("ready_in", "<_30_minutes");
+                  handleFilterChange(
+                    "ready_in",
+                    "<_30_minutes" as keyof queryDataObj["diet" | "ready_in"]
+                  );
                 }}
               />
               <label htmlFor="30mins"> &lt; 30 minutes</label>
@@ -207,7 +244,10 @@ const Homepage = () => {
                 name="1hour"
                 value="1 hour"
                 onChange={() => {
-                  handleFilterChange("ready_in", "<_60_minutes");
+                  handleFilterChange(
+                    "ready_in",
+                    "<_60_minutes" as keyof queryDataObj["diet" | "ready_in"]
+                  );
                 }}
               />
               <label htmlFor="1hour"> &lt; 1 hour</label>
@@ -219,7 +259,10 @@ const Homepage = () => {
                 name="1.5hours"
                 value="1.5 hours"
                 onChange={() => {
-                  handleFilterChange("ready_in", "<_90_minutes");
+                  handleFilterChange(
+                    "ready_in",
+                    "<_90_minutes" as keyof queryDataObj["diet" | "ready_in"]
+                  );
                 }}
               />
               <label htmlFor="1.5hours"> &lt; 1.5 hours</label>
@@ -265,7 +308,7 @@ const Homepage = () => {
         {data && (
           <div className="recipes">
             {data?.pages.map((page) =>
-              page.results.map((recipeItem) => {
+              page.results.map((recipeItem: any) => {
                 return (
                   <RecipeItemCard
                     key={recipeItem.id}

@@ -1,4 +1,10 @@
-const RecipeItemCard = ({ imageUrl, title, onClick }) => {
+type RecipeItemProps = {
+  imageUrl: string;
+  title: string;
+  onClick: () => void;
+};
+
+const RecipeItemCard = ({ imageUrl, title, onClick }: RecipeItemProps) => {
   return (
     <div className="recipe-item" onClick={onClick}>
       <img src={imageUrl} alt={title} />

@@ -3,13 +3,18 @@ import logo from "/logo.png";
 import Overlay from "./Overlay";
 import { useNavigate } from "react-router-dom";
 
-const Nav = ({ type, putSearchTerm }) => {
+type NavProps = {
+  type: string | undefined;
+  putSearchTerm: (val: string) => void;
+};
+
+const Nav = ({ type, putSearchTerm }: NavProps) => {
   const [isFocused, setIsFocused] = useState(false);
   const [value, setValue] = useState("");
 
   const navigate = useNavigate();
 
-  const inputRef = useRef();
+  const inputRef = useRef<HTMLInputElement>();
 
   const handleFocus = function () {
     setIsFocused(true);
@@ -23,7 +28,7 @@ const Nav = ({ type, putSearchTerm }) => {
   function handleKeyDown(e) {
     if (e.key === "Enter") {
       putSearchTerm(value);
-      inputRef.current.blur();
+      inputRef.current!.blur();
     }
   }
 

@@ -4,13 +4,46 @@ import {
   processReadyInFilters,
 } from "./processDietFilters";
 
+type queryDataObj = {
+  diet: {
+    gluten_free: boolean;
+    vegetarian: boolean;
+  };
+  ready_in: {
+    "<_10_minutes": boolean;
+    "<_20_minutes": boolean;
+    "<_30_minutes": boolean;
+    "<_60_minutes": boolean;
+    "<_90_minutes": boolean;
+  };
+};
+
+type rangeQueryDataObj = {
+  minCalories: string | number;
+  maxCalories: string | number;
+  minProtein: string | number;
+  maxProtein: string | number;
+  minFat: string | number;
+  maxFat: string | number;
+  minCarbs: string | number;
+  maxCarbs: string | number;
+};
+
+type FetchRecipesArgs = {
+  signal: any;
+  searchTerm: string;
+  queryData: queryDataObj;
+  rangeQueryData: rangeQueryDataObj;
+  pageParam: number;
+};
+
 export const fetchRecipes = async function ({
   signal,
   searchTerm,
   queryData,
   rangeQueryData,
   pageParam,
-}) {
+}: FetchRecipesArgs) {
   const apiKey = localStorage.getItem("apiKey");
 
   const dietFilterData = processDietFilters(queryData);
@@ -33,8 +66,6 @@ export const fetchRecipes = async function ({
 
   if (!res.ok) {
     const error = new Error("An error occured while fetching the data");
-    error.code = res.status;
-    error.info = await res.json();
     throw error;
   }
 

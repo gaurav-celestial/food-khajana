@@ -1,4 +1,9 @@
-const Ingredient = ({ data, values }) => {
+type IngredientProps = {
+  data: any;
+  values: string;
+};
+
+const Ingredient = ({ data, values }: IngredientProps) => {
   console.log(values, data);
 
   const weight =

@@ -1,4 +1,29 @@
-const processDietFilters = function (queryData) {
+type queryDataObj = {
+  diet: {
+    gluten_free: boolean;
+    vegetarian: boolean;
+  };
+  ready_in: {
+    "<_10_minutes": boolean;
+    "<_20_minutes": boolean;
+    "<_30_minutes": boolean;
+    "<_60_minutes": boolean;
+    "<_90_minutes": boolean;
+  };
+};
+
+type rangeQueryDataObj = {
+  minCalories: string | number;
+  maxCalories: string | number;
+  minProtein: string | number;
+  maxProtein: string | number;
+  minFat: string | number;
+  maxFat: string | number;
+  minCarbs: string | number;
+  maxCarbs: string | number;
+};
+
+const processDietFilters = function (queryData: queryDataObj) {
   const dietFilters = [];
 
   Object.entries(queryData).forEach((data) => {
@@ -38,7 +63,7 @@ const processReadyInFilters = function (queryData) {
   return Math.max(...finalReadyIn, 0);
 };
 
-const processRangeFilters = function (rangeQueryData) {
+const processRangeFilters = function (rangeQueryData: rangeQueryDataObj) {
   const finalRange = Object.entries(rangeQueryData).filter((data) => {
     return data[1];
   });
