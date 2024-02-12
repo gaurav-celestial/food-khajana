@@ -9,7 +9,7 @@ type ModalProps = {
 const Modal = ({ showModal, handleApiKey }: ModalProps) => {
   const [apiKey, setApiKey] = useState("");
   const [isPending, setIsPending] = useState(false);
-  const [apiResponse, setApiResponse] = useState<string | object>("");
+  const [apiResponse, setApiResponse] = useState<any>(null);
 
   const handleSubmit = function () {
     async function fetchApiTest() {
