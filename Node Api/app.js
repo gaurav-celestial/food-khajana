@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const fs = require("fs");
 const pool = require("./db");
 
 const app = express();
@@ -25,15 +24,10 @@ app.get("/api/fetchRecipes", async (req, res) => {
     page,
   } = req.query;
 
-  console.log(page);
+  try {
+    const allRecipes = await pool.query("SELECT * FROM recipe");
 
-  fs.readFile("./content/all-recipes.json", "utf8", (err, data) => {
-    if (err) {
-      console.log("error reading file", err);
-      return;
-    }
-
-    const finalData = JSON.parse(data).results.filter((s) => {
+    const finalData = allRecipes.rows.filter((s) => {
       if (searchTerm) return s.title.includes(searchTerm);
       return s;
     });
@@ -53,7 +47,6 @@ app.get("/api/fetchRecipes", async (req, res) => {
 
     const finalDataProcess2 = finalDataProcess1.filter((f1) => {
       if (ready_in) {
-        // console.log(ready_in.split(","));
         return ready_in.split(",").includes(f1.readyIn);
       }
       return f1;
@@ -64,7 +57,9 @@ app.get("/api/fetchRecipes", async (req, res) => {
       return f;
     });
 
-    const finalDataProcess4 = finalDataProcess3.slice((page - 1) * 9, page * 9);
+    const finalDataProcess4 = page
+      ? finalDataProcess3.slice((page - 1) * 9, page * 9)
+      : finalDataProcess3;
 
     setTimeout(() => {
       if (finalDataProcess4.length)
@@ -73,28 +68,22 @@ app.get("/api/fetchRecipes", async (req, res) => {
         return res.status(404).json("Page does not exist");
       }
     }, 1000);
-  });
-
-  //   res.end("No data available");
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 app.get("/api/fetchRecipes/:id", async (req, res) => {
-  const { id } = req.params;
-
-  fs.readFile("./content/recipesSummary.json", "utf8", (err, data) => {
-    if (err) {
-      console.log("error reading file", err);
-      return;
-    }
-
-    const selectedItem = JSON.parse(data).results.filter((d) => {
-      return d.id === Number(id);
-    });
-
-    return res.status(200).json(selectedItem);
-  });
-
-  //   res.end("No data available");
+  try {
+    const { id } = req.params;
+    const recipe = await pool.query(
+      "SELECT * FROM recipe_summary WHERE id=$1",
+      [id]
+    );
+    return res.status(200).json(recipe.rows);
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 app.listen(5000, () => {
