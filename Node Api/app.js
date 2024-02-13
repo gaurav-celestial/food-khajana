@@ -8,28 +8,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-async function insert() {
-  fs.readFile("./content/recipesSummary.json", "utf8", (err, data) => {
-    if (err) {
-      console.log("error reading file", err);
-      return;
-    }
-
-    JSON.parse(data).results.map(async (s) => {
-      console.log(s);
-      await pool.query(
-        "INSERT INTO recipe (description) VALUES($1) RETURNING *",
-        [description]
-      );
-    });
-  });
-
-  // const newTodo = await pool.query(
-  //   "INSERT INTO todo (description) VALUES($1) RETURNING *",
-  //   [description]
-  // );
-}
-
 app.get("/api/fetchRecipes", async (req, res) => {
   const {
     minCalories = 10,

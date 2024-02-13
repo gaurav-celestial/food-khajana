@@ -21,4 +21,21 @@ const fetchRecipes = async function () {
   }
 };
 
-export { fetchRecipes };
+async function insertToRecipeSummary() {
+  fs.readFile("./content/recipesSummary.json", "utf8", (err, data) => {
+    if (err) {
+      console.log("error reading file", err);
+      return;
+    }
+
+    JSON.parse(data).results.map(async (s) => {
+      console.log(s.summary);
+      await pool.query(
+        "INSERT INTO recipe_summary (id,title,image,summary,ingredients) VALUES($1,$2,$3,$4,$5) RETURNING *",
+        [s.id, s.title, s.image, s.summary, JSON.stringify(s.ingredients)]
+      );
+    });
+  });
+}
+
+export { fetchRecipes, insertToRecipeSummary };
